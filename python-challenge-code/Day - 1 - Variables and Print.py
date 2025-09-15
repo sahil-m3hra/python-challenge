@@ -22,7 +22,7 @@
 # We can use \t (tab separator) in between multiple values or in a string if we want 1 tab of spaces in between.
 # We can use \n (new line separator) in between multiple values or in a string if we want them to print in on a next line.
 # Example:
-# print("Hello","Sahil",123)
+# print("Hello",Sahil",123)
 # print("Hello\t123") or print("Hello\t", 123)
 # print("Hello\n123") or print("Hello\n",123) 
 
