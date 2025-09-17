@@ -47,4 +47,116 @@ print("Hello\t",name)
 print("Your age is:\t ",age)
 print("Are you present today?:\t",is_present)
 
+# ********************************* Data Types *********************************
+# Datatypes define the type of data being stored inside a variable. Like in real world we deal with numbers, text, yes/no etc.
+# Following are the basic datatypes available in Python.
+# 1. int - these are the integer numbers like 10, -25, 100 etc. Like numbers without decimal point.
+# 2. float - these are the numbers with decimal point like 25.6, -10.5 etc.
+# 3. string - anything inside " " is treated as a string in python. like "Hello", "123" etc.
+# 4. boolean - True and False without quotation marks.
+# Syntax:
+name = "John Doe" #string data type
+age = 23 # integer data type
+weight = 64.6 #float data type
+is_present = True #boolean data type
+address = "123, abc street, London 123456" #string data type
+
+# We can use type() function to check the data type of any variable, value. type() return the datatype class
+# E.g: 
+print(type(name)) #<class 'str'>
+print(type(age)) #<class 'int'>
+print(type(weight)) #<class 'float'>
+print(type(is_present)) #<class 'bool'>
+print(type(address)) #<class 'str'>
+
+
+# ********************************* Input function *********************************
+# input() is used to accept values from user.
+# Syntax:
+# name = input("Enter your name: ")
+# By default input() accepts every value in String data type.
+# so we need to convert these values if we want to accept numbers and boolean values from user. This process of conversion is known as Type casting.
+# we can write input() inside int() if we want to convert the input value (if it is a integer number but in string datatype e.g: "123")
+# example:
+age = int(input("Enter your age: "))
+print(f"DataType of age value is {type(age)}")
+# Similarly
+# we can write input() inside float() if we want to convert the input value (if it is a floating number but in string datatype e.g: "123.56")
+# example:
+height = float(input("Enter your height: "))
+print(f"DataType of height value is {type(height)}")
+# we can write input() inside bool() if we want to convert the input value (if it is a True/False)
+# example:
+is_present = bool(input("Are you absent today? True/False "))
+print(f"DataType of is_present value is {type(is_present)}")
+# we can write input() inside str() if we want to convert the input value (if it is a number or bool type value)
+# example:
+address = str(input("Enter your address: "))
+print(f"DataType of address value is {type(address)}")
+
+# ********************************* Operators in Python *********************************
+# Before understanding operators lets understand what an expression is: a+b-2=0
+# a+b-2=0 this is a random expression for example: here a,b,2 are known as operands and +,-,= are known as operators.
+
+# Operators are the symbols used to perform some specific task or calculation.
+# There are two types of operators
+# 1. Unary operators -> works with only single operand like +10, -b etc
+# 2. Binary operators -> works with multiple operands like a + b = c
+# There are 4 types of Binary operators:
+    # 1. Arithmetic Operators - used to perform mathematical calculations.
+    # 2. Relational Operators - used to compare 2 or more than 2 values and form a condition and the final answer will be in True/False.
+    # 3. Logical Operators - used to compare two or more than 2 relational conditions
+    # 4. Assignment operators - used to assign values to a variables.
+
+# 1. Arithmetic Operators
+# There are several operators in this category like:
+# + (Addition)
+# - (Subtraction)
+# * (Multiplications)
+# / (Division) -> return the quotient after division in floating data type
+# // (Floor division) -> return the quotient after division in integer type. Basically it will exclude everything after the decimal point.
+# % (Modulus) -> return the remainder value
+# ** (Exponential) -> helps to find the power
+
+# Example:
+num1 = int(input("Enter first number: ")) #lets say 10
+num2 = int(input("Enter first number: ")) #lets say 5
+sum = num1 + num2 # 15
+diff = num1 - num2 # 5
+mul = num1 * num2 # 50
+div = num1 / num2 # 2.0
+floor_div = num1 // num2 # 2 
+remainder = num1 % num2 # 0
+exponent = num1 ** num2  # 100000
+
+# In an expression, if multiple arithmetic operators are there the the execution will be done one the basis of PEMDAS and this order of priority of operators during execution is known as Precedence.
+#                        _
+# P - Parenthesis ( )    |   High
+# E - exponential **     |   
+# M - Multiplication *   |    to 
+# D - Division / // %    |
+# A - Addition +         |
+# S - Subtraction -      V   low
+
+                         
+
+# 2. Relational Operators
+# There are six relational operators in Python and returns final result in True/False.
+# < - less than
+# > - Greater than
+# <= - less than equal to 
+# >= - greater than equal to 
+# == - equal to (checks equality)
+# != - not equal to
+
+# example:
+a = 10
+b = 5
+
+print(a<b) # False
+print(a>b) # True
+print(a<=b) # False because neither 10 is less than nor equal to 5
+print(a>=b) # True because 10 is greater than 5 so it will not check for the equality here.
+print(a==b) # False
+print(a!=b) # True
 
