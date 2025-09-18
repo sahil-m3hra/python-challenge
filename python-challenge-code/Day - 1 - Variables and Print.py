@@ -160,3 +160,46 @@ print(a>=b) # True because 10 is greater than 5 so it will not check for the equ
 print(a==b) # False
 print(a!=b) # True
 
+# 3. Logical Operators
+# There are 3 logical operators in python i.e && (and) , || (or) , not(). They are used to compare 2 or more than 2 relational conditions.
+# Example:
+# and -> and will return True as a final answer if all the relational conditions will return True otherwise it will return False.
+# or -> or will return True as a final answer if any of the relational condition will return True other will it will return False.
+# not(relational conditions) -> It reverse the answer. If the relational conditions answer is True then it will reverse it to False and Vice-versa.
+num1 = 10
+num2 = 5
+num3 = 12
+# print((num1 > num2) and (num2 < num3)) -> It will return True as final answer because both relational conditions will return true here.
+# print((num1 > num2) or (num2 > num3)) -> It will return True as final answer because first relational conditions will return true and second relational condition will return false so final answer will be True.
+# print(not(num1 > num2 and num2 < num3)) -> It will return True first but not() will reverse it so final answer will be False.
+
+
+# ********************************* Assignment operators in Python *********************************
+# = -> Assignment Operator used to assign values to a variable.
+# a = 10
+# name = "Akhil"
+
+# += -> used to add right side value to left side variable. e.g :
+# age = 25
+# instead of age = age + 5 we can do the following
+# age += 5
+# print(age) -> 30
+
+# -= -> used to subtract right side value to left side variable. e.g :
+# age = 25
+# instead of age = age - 5 we can do the following
+# age -= 5
+# print(age) -> 20
+
+# *= -> used to multiply right side value to left side variable. e.g :
+# age = 5
+# instead of age = age * 5 we can do the following
+# age *= 5
+# print(age) -> 25
+
+# /= -> used to divide right side value to left side variable. e.g :
+# age = 25
+# instead of age = age / 5 we can do the following
+# age /= 5
+# print(age) -> 5
+
